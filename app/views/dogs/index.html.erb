@@ -1,10 +1,12 @@
 <div class="dog-list">
   <% @dogs.each do |dog| %>
       <div class="dog-index">
-        <%= link_to dogs_path(dog.id) do %>
+        <%= link_to dog_path(dog.id) do %>
           <%= image_tag(dog.image, class: 'index-image') %>
         <% end %>
         <p><%= dog.breed %></p>
+        <%= link_to('Edit', edit_dog_path(dog.id), class: 'index-link') %>
+        <%= link_to('Delete', dog_path(dog.id), method: :delete, class: 'index-link') %>
       </div>
   <% end %>
 </div>

@@ -9,6 +9,7 @@ LAYOUT
 nav {
   text-align: right;
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 nav li {
@@ -40,6 +41,25 @@ INDEX PAGE
 }
 
 /******************************
+SHOW PAGE
+*******************************/
+
+.show-wrapper {
+  text-align: center;
+}
+
+.show-image {
+  width: 400px;
+  height: 500px;
+}
+
+.show-history {
+  display: inline-block;
+  width: 800px;
+  margin-bottom: 50px;
+}
+
+/******************************
 NEW PAGE
 *******************************/
 
@@ -59,3 +79,19 @@ label {
 text_field {
   display: block;
 }
+
+input[type="submit"] {
+  display: block;
+  margin: 20px auto;
+}
+
+/******************************
+EDIT PAGE
+*******************************/
+.edit-wrapper {
+  text-align: center;
+}
+
+
+
+

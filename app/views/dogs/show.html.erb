@@ -1,2 +1,11 @@
-<h1>Dogs#show</h1>
-<p>Find me in app/views/dogs/show.html.erb</p>
+<h1><%= @dog.breed %></h1>
+
+<%= image_tag(@dog.image, class: 'show-image') %>
+
+<h5>Colour: <%= @dog.color %></h5>
+
+<h5>Country of origin: <%= @dog.country_of_origin %></h5>
+
+<h5>Friendly: <%= @dog.friendly == true ? 'yes' : 'no' %></h5>
+
+<p class="show-history"><%= @dog.history %></p>
