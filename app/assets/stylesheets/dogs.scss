@@ -1,0 +1,61 @@
+// Place all the styles related to the dogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/******************************
+LAYOUT
+*******************************/
+
+nav {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 3px;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/******************************
+INDEX PAGE
+*******************************/
+.index-wrapper {
+  text-align: center;
+}
+
+.index-image {
+  height: 300px;
+  width: 300px;
+}
+
+.dog-index {
+  display: inline-block;
+}
+
+/******************************
+NEW PAGE
+*******************************/
+
+.new-wrapper {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  padding: 20px;
+}
+
+text_field {
+  display: block;
+}

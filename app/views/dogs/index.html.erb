@@ -1,0 +1,10 @@
+<div class="dog-list">
+  <% @dogs.each do |dog| %>
+      <div class="dog-index">
+        <%= link_to dogs_path(dog.id) do %>
+          <%= image_tag(dog.image, class: 'index-image') %>
+        <% end %>
+        <p><%= dog.breed %></p>
+      </div>
+  <% end %>
+</div>

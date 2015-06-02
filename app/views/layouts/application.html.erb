@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CrudRailsHomework</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <li><%= link_to('HOME', dogs_path) %></li>
+      <li><%= link_to('ADD NEW BREED', new_dog_path) %></li>
+    </nav>
+  </header>
+
+<div class="<%= params[:action] %>-wrapper">
+  <%= yield %>
+</div>
+
+</body>
+</html>
