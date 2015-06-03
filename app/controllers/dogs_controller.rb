@@ -9,6 +9,7 @@ class DogsController < ApplicationController
 
   def edit
     @dog = Dog.find(params[:id])
+    @dog_name = @dog.breed
   end
 
   def update
